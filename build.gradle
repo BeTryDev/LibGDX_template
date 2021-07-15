@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'ru.betry'
+version '1.0'
+
+mainClassName = 'ru.betry.App'
+
+sourceSets.main.resources.srcDirs = ["assets/"]
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.badlogicgames.gdx:gdx-backend-lwjgl:1.9.11"
+    compile "com.badlogicgames.gdx:gdx-platform:1.9.11:natives-desktop"
+    compile "com.badlogicgames.gdx:gdx-box2d-platform:1.9.11:natives-desktop"
+    compile "com.badlogicgames.gdx:gdx-controllers-desktop:1.9.11"
+    compile "com.badlogicgames.gdx:gdx-controllers-platform:1.9.11:natives-desktop"
+    compile "com.badlogicgames.gdx:gdx-tools:1.9.11"
+    compile "com.badlogicgames.gdx:gdx-freetype-platform:1.9.11:natives-desktop"
+    compile "com.badlogicgames.gdx:gdx-bullet-platform:1.9.11:natives-desktop"
+}
